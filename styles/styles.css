@@ -1,0 +1,136 @@
+body {
+ padding-top: 50px;
+}
+
+.banner {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banner.heading {
+    height: 100vh;
+    background-image: url('../imgs/jellyfish.jpg');
+}
+
+.heading-text {
+    padding 40vh;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.banner.kraken {
+    height: 40vh;
+    background-image: url('../imgs/Kraken.jpg');
+    
+    font-family: 'Sail', cursive;
+font-family: 'Abel', sans-serif;
+}
+
+.kraken-text {
+    padding: 10vh;
+    width: 100%;
+    color: whitesmoke;
+    
+}
+
+.headingTable {
+    height: 100vh;
+    display: table;
+}
+
+.headingTitle {
+    display: table;
+}
+
+.nameHeading {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    font-size: 20px;
+}
+
+.introduction {
+    height: 60vh;
+}
+
+.bio {
+    text-align: right;
+    height: 100%;
+}
+
+#headshot {
+    width: 100%;
+}
+
+.careerPortal {
+    text-align: center;
+}
+
+.actorRedirects {
+  float: right;
+}
+
+
+.actorHeader h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: inline;
+    float: left;
+}
+
+.actorHeader.actorRedirects button {
+    display: inline-block;
+    vertical-align: bottom;
+    float: right;
+}
+
+#actorHeadshot {
+    height: 80vh;
+    float: left;
+}
+.carousel.slide {
+    text-align: center;
+}
+
+.carousel.slide img {
+    height: 80vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.programmer-banner {
+    height: 1000px;
+    width: 100%;
+    background-image: url('../imgs/PrattHouse.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: black;
+}
+
+.programmer-banner div {
+    padding-top: 60vh;
+    color: whitesmoke;
+}
+
+#programmerBackground {
+    background-color: #F0C04F;
+}
+
+.infoSection {
+    padding: 30px 0;
+}
+
+.glyphicon {
+    font-size: 48px;
+}
+
+#aboutContainer {
+    padding: 10px
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
