@@ -3,8 +3,17 @@ body {
     font-family: 'Abel', sans-serif;
 }
 
+footer {
+    background-color: #404040;
+    color: whitesmoke;
+}
+
 a {
     color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,13 +58,14 @@ h1, h2, h3, h4, h5, h6 {
 .heading-title:hover {
     background-color: rgba(10, 10, 10, .8);
     color: aquamarine;
+    text-decoration: none;
 }
 
 .heading-link {
     background-color: rgba(10, 10, 10, .6);
     float: left;
     margin: 5px;
-    padding: 1%;
+    padding: 1% 3%;
     font-family: 'Sail', cursive;
 }
 
@@ -84,13 +94,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Sail', cursive;
 }
 
-#actorHeadingLink:hover {
+.heading-title:hover {
+    
+}
+
+.actorHeadingLink:hover {
     color: #523957;
 }
 
-#programmerHeadingLink:hover {
+.programmerHeadingLink:hover {
     color: #F0C04F;
-    background-color: rgba(10, 10, 10, .6);
 }
 
 .kraken-banner {
@@ -158,7 +171,6 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-
 .actorHeader h1 {
     font-family: 'Open Sans Condensed', sans-serif;
     display: inline;
@@ -169,6 +181,12 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     vertical-align: bottom;
     float: right;
+}
+
+.actor-banner {
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('../imgs/theatre.jpg')
 }
 
 #actorHeadshot {
@@ -196,10 +214,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: black;
 }
 
-.programmer-banner div {
-    color: whitesmoke;
-}
-
 #programmerBackground {
     background-color: #F0C04F;
 }
@@ -216,4 +230,40 @@ label {
     display:block;
     margin-top:20px;
     letter-spacing:2px;
+}
+
+.carousel-inner div.item {
+    
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-position: center;
+    background-size: contain;
+}
+
+#carousel1 {
+    background-image: url('../imgs/ActorV1.jpg');
+}
+
+#carousel2 {
+    background-image: url('../imgs/ActorV3.jpg');
+}
+
+#carousel3 {
+    background-image: url('../imgs/franz.jpg');
+}
+
+#carousel4 {
+    background-image: url('../imgs/marcel.jpg');
+}
+
+#carousel5 {
+    background-image: url('../imgs/marcel2.jpg');
+}
+
+#carousel6 {
+    background-image: url('../imgs/pozzo1.jpg');
+}
+
+#carousel7 {
+    background-image: url('../imgs/pozzo2.jpg');
 }
