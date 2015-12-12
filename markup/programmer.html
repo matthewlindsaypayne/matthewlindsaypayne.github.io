@@ -4,9 +4,9 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One|Ubuntu+Condensed|Alegreya&subset=latin,greek' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../scripts/general.js"></script>
         <link rel="stylesheet" href="../styles/styles.css" />
     </head>
     <body>
@@ -24,24 +24,31 @@
                 </div>
                 
                 <div class="collapse navbar-collapse" id="nav-collapse">
-                    <ul class="nav navbar-nav nav-tabs">
-                        <a class="navbar-brand" href="index.html">Matthew Lindsay Payne</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Matthew Lindsay Payne</a></li>
                         <li><a href="actor.html">Actor</a></li>
                         <li class="active"><a href="programmer.html">Programmer <span class="sr-only">(current)</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <a href="mailto:matthew.lindsay.payne@gmail.com"><span class="glyphicon glyphicon-envelope nav-color" aria-hidden="true"></span></a>
                     </ul>
                 </div>  
             </div>
         </nav>
         
-        <div class="banner programmer-banner">
+        <div class="banner programmer-banner container-fluid">
             <div class="col-md-offset-3 col-md-6 text-center">
                 <div class="heading">
-                    <a href="index.html"><div class="heading-title">Matthew Lindsay Payne</div></a>
+                    <a href="index.html"><div class="heading-title"><h1>Matthew Lindsay Payne</h1></div></a>
                     <div>
-                        <a class="programmerHeadingLink" href="#programmerOverview"><div class="heading-link">Programmer</div></a>
-                        <a class="programmerHeadingLink" href="../misc/MLPEngineerResume.pdf"><div class="heading-link">Download Resume</div></a>
+                        <a class="programmerHeadingLink" href="#programmerOverview"><div class="heading-link"><h2>Skills</h2></div></a>
+                        <a class="programmerHeadingLink" href="../misc/MLPEngineerResume.pdf"><div class="heading-link"><h2>Download Resume (PDF)</h2></div></a>
                     </div>
                 </div>
+            </div>
+            
+            <div class="attribution">
+                Image by <a href="https://deliriumdog.wordpress.com/">Glenn Ricci.</a>
             </div>
         </div>
         
@@ -49,9 +56,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center">
-                        <h2>Full Stack to Front End</h2>
+                        <h2>Full Stack</h2>
                         <p class="lead">
-                            I am a communicative full stack engineer transitioning to be a front end developer with a focus on adaptive design.  Currently expanding in Bootstrap, Wordpress, and Ruby.
+                            I am a communicative full stack engineer with a focus on responsive design.  Currently expanding in Bootstrap, Wordpress, and Ruby.
                         </p>
                     </div>
                 </div>
@@ -59,32 +66,47 @@
         </div>
         
         <div id="programmerBackground">
-            <div class="container">
-                <div class="row">
-                    <div id="educationSection" class="col col-md-offset-2 col-md-2 text-center infoSection">
+            <div class="container text-left">
+                <div id="educationSection" class="row info-section">
+                    <div class="col col-md-offset-1 col-md-2 text-center">
                         <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                        <h3>Education</h3>
-                        <p>I graduated from Loyola University Maryland with a B.S. of Computer Science. I have over 7 years of educational Java.</p>
                     </div>
-            
-                    <div id="netSection" class="col col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span>
-                        <h3>.NET</h3>
-                        <p>I've spent the last two years working in a .NET environment including work in C#, SQL, AngularJS, JQuery, NuGet, and Selenium</p>
-                    </div>
-            
-                    <div id="frontEndSection" class="col col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-                        <h3>Front End</h3>
-                        <p>I am moving to being a fullly front end developer and am working with Bootstrap and Wordpress.</p>
-                    </div>
-            
-                    <div id="miscSection" class="col col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                        <h3>Side Ventures</h3>
-                        <p>Past experience has included robotics, graphics, and code base optimization.</p>
+                    <div class="col col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-6">
+                        <h2 class="text-center">Education</h2>
+                        <p class="lead">I graduated from <strong>Loyola University Maryland</strong> with a <strong>B.S. of Computer Science.</strong> I have been programming since I was 15. I have over 7 years of educational <strong>Java.</strong></p>
                     </div>
                 </div>
+            
+                <div id="netSection" class="row info-section">
+                    <div class="col col-md-push-7 col-md-offset-1 col-md-2 text-center">
+                        <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span>
+                    </div>
+                    <div class="col col-xs-offset-1 col-xs-10 col-md-pull-3 col-md-offset-1 col-md-6">
+                        <h2 class="text-center">.NET</h2>
+                        <p class="lead">I've spent the last two years working in a <strong>.NET</strong> environment including work in <strong>C#, SQL, JQuery, NuGet,</strong> and <strong>Selenium.</strong>  I also spent six months working in an environment that uses <strong>VB.NET.</strong></p>
+                    </div>
+                </div>
+            
+                <div id="frontEndSection" class="row info-section">
+                    <div class="col col-md-offset-1 col-md-2 text-center">
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                    </div>
+                    <div class="col col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-6">
+                        <h2 class="text-center">Front End</h2>
+                        <p class="lead">I am creating a few sites of my own with <strong>Wordpress,</strong> and <strong>Bootstrap.</strong>  I have worked with <strong>AngularJS</strong> and the <strong>MVC</strong> pattern.</p>
+                    </div>
+                </div>
+                
+                <div id="miscSection" class="row info-section">
+                    <div class="col col-md-push-7 col-md-offset-1 col-md-2 text-center">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </div>
+                    <div class="col col-xs-offset-1 col-xs-10 col-md-pull-3 col-md-offset-1 col-md-6">
+                        <h2 class="text-center">Side Ventures</h2>
+                        <p class="lead">My past experience has included <strong>robotics, graphics,</strong> and <strong>code base optimization.</strong>  I also have performed academic research as an undergrad.</p>
+                    </div>
+                </div>
+        </div>
             </div>
             
         
@@ -93,20 +115,8 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div id="educationSection" class="col col-md-offset-3 col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                        <h3>Email</h3>
-                        <p>matthew.lindsay.payne@gmail.com</p>
-                    </div>
-                    <div class="col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
-                        <h3>Rights</h3>
-                        <p>Copyright 2015 <br /> All Rights Reserved</p>
-                    </div>
-                    <div class="col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                        <h3>Credits</h3>
-                        <p>Curtain image by <a href="http://eveyd.deviantart.com/art/Backdrop-Vintage-Theater-Stage-Curtain-Plum-268618375">EveyD.</a></p>
+                    <div class="text-center infoSection">
+                        <h3>Copyright 2015</h3>
                     </div>
                 </div>
             </div>

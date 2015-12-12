@@ -4,9 +4,9 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One|Ubuntu+Condensed|Alegreya&subset=latin,greek' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../scripts/general.js"></script>
         <link rel="stylesheet" href="../styles/styles.css" />
     </head>
     <body>
@@ -24,24 +24,31 @@
                 </div>
                 
                 <div class="collapse navbar-collapse" id="nav-collapse">
-                    <ul class="nav navbar-nav nav-tabs">
-                        <a class="navbar-brand" href="index.html">Matthew Lindsay Payne</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Matthew Lindsay Payne</a></li>
                         <li class="active"><a href="actor.html">Actor <span class="sr-only">(current)</span></a></li>
                         <li><a href="programmer.html">Programmer</a></li>
+                    </ul>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <a href="mailto:matthew.lindsay.payne@gmail.com"><span class="glyphicon glyphicon-envelope nav-color" aria-hidden="true"></span></a>
                     </ul>
                 </div>  
             </div>
         </nav>
         
-        <div class="banner actor-banner">
+        <div class="banner actor-banner container-fluid">
             <div class="col-md-offset-3 col-md-6 text-center">
                 <div class="heading">
-                    <a href="index.html"><div class="heading-title">Matthew Lindsay Payne</div></a>
+                    <a href="index.html"><div class="heading-title"><h1>Matthew Lindsay Payne</h1></div></a>
                     <div>
-                        <a class="actorHeadingLink" href="#actorOverview"><div class="heading-link">Actor</div></a>
-                        <a class="actorHeadingLink" href="../misc/MLPayneActorResume.pdf"><div class="heading-link">Download Resume</div></a>
+                        <a class="actorHeadingLink" href="#actorOverview"><div class="heading-link"><h2>Bio</h2></div></a>
+                        <a class="actorHeadingLink" href="../misc/MLPayneActorResume.pdf"><div class="heading-link"><h2>Download Resume (PDF)</h2></div></a>
                     </div>
                 </div>
+            </div>
+            <div class="attribution">
+                Image by <a href="http://eveyd.deviantart.com/art/Backdrop-Vintage-Theater-Stage-Curtain-Plum-268618375">EveyD.</a>
             </div>
         </div>
         
@@ -136,20 +143,8 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div id="educationSection" class="col col-md-offset-3 col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                        <h3>Email</h3>
-                        <p>matthew.lindsay.payne@gmail.com</p>
-                    </div>
-                    <div class="col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
-                        <h3>Rights</h3>
-                        <p>Copyright 2015 <br /> All Rights Reserved</p>
-                    </div>
-                    <div class="col-md-2 text-center infoSection">
-                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                        <h3>Credits</h3>
-                        <p>Curtain image by <a href="http://eveyd.deviantart.com/art/Backdrop-Vintage-Theater-Stage-Curtain-Plum-268618375">EveyD.</a></p>
+                    <div class="text-center infoSection">
+                        <h3>Copyright 2015</h3>
                     </div>
                 </div>
             </div>

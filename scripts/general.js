@@ -1,13 +1,25 @@
 /*global $:false, jQuery:false */
 
-$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.href);
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
+$(document).on('click', 'a[href^="#"]', function (e) {
+    // target element id
+    'use strict';
+    
+    var id = $(this).attr('href'),
+        $id = $(id),
+        navOffset = 50,
+        pos;
+    if ($id.length === 0) {
+        return;
     }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    pos = $(id).offset().top - navOffset;
+
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
 });
 
 
@@ -18,13 +30,11 @@ var GeneralUtilities = (function ($) {
     
         dropdownHover = function (dropdown) {
             var dropdownMenu = this.find('.dropdown-menu');
-            console.log(dropdownMenu);
             dropdownMenu.stop(true, true).delay(200).fadeIn(500);
         },
     
         dropdownStopHover = function (dropdown) {
             var dropdownMenu = this.find('.dropdown-menu');
-            console.log(dropdownMenu);
             dropdownMenu.stop(true, true).delay(200).fadeOut(500);
         },
     
@@ -48,5 +58,4 @@ var GeneralUtilities = (function ($) {
     
 }(jQuery));
 
-console.log(GeneralUtilities);
 GeneralUtilities.init();
