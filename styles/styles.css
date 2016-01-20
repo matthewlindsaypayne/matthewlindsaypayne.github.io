@@ -6,53 +6,41 @@ body {
 footer {
     background-color: #404040;
     color: whitesmoke;
+    font-family: 'Sail', cursive;
 }
 
-a {
-    color: inherit;
+h1 {
+    font-size: 42px;
+    font-family: 'Sail', cursive;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
     font-size: 18px;
 }
 
-h2 {
-    font-size: 36px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 42px;
+a {
+    color: inherit;
 }
 
 a:hover {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sail', cursive;
-}
-
 .nav .glyphicon {
-    font-size: 40px;
-    padding-top: 5px;
+    font-size: 32px;
+    padding-top: 9px;
     padding-left: 15px;
-}
-
-.nav a {
-    font-family: 'Abel', sans-serif;
 }
 
 .nav-color {
     color: #9d9d9d;
     padding-right: 10px;
-}
-.abel {
-    font-family: 'Abel', sans-serif;
-}
-
-.sail {
-    font-family: 'Sail', cursive;
 }
 
 .attribution {
@@ -285,6 +273,10 @@ label {
     height: 80vh;
     background-position: center;
     background-size: contain;
+}
+
+div .carousel-caption {
+    text-shadow: 2px 2px 0px #000000;
 }
 
 #carousel1 {
